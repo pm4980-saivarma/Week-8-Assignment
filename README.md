@@ -1,4 +1,4 @@
-# Week 8 Assignment
+# Week-8-Assignment
 
 Five Java programs that demonstrate polymorphism by applying different business
 rules to bills, vehicles, rooms, employees, and subscription plans.
@@ -42,5 +42,5 @@ javac Problem5/StreamingPlanRenewalReminder.java
 java -cp Problem5 StreamingPlanRenewalReminder
 ```
 
-Provide each problem's input through standard input when prompted by the
-environment; the programs do not print prompts.
+Provide each problem's input through standard input; the programs do not print
+prompts.
