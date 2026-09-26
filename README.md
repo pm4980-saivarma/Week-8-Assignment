@@ -1,46 +1,32 @@
-# Week-8-Assignment
+# Week 8 Practice Assignment
 
-Five Java programs that demonstrate polymorphism by applying different business
-rules to bills, vehicles, rooms, employees, and subscription plans.
+Five Java command-line solutions demonstrating polymorphism: each payment method,
+library item, delivery service, question type, and transport type implements its
+own behavior while the main program processes a collection uniformly.
 
-## Requirements
-
-- Java 9 or later
-
-## Problems
+## Solutions
 
 | Folder | Program | Description |
 | --- | --- | --- |
-| `Problem1` | `CanteenBillingCounter` | Calculates customer bills and the total collected. |
-| `Problem2` | `ParkingChargeCalculator` | Calculates parking charges and the total collected. |
-| `Problem3` | `HostelElectricityBill` | Calculates room electricity bills and the total shown. |
-| `Problem4` | `FestivalBonusCalculator` | Calculates employee bonuses and the total paid. |
-| `Problem5` | `StreamingPlanRenewalReminder` | Calculates subscription renewal dates. |
-
-Each program reads input from standard input and prints the result in the
-specified format. The type-specific calculations are implemented by separate
-classes selected through a registry.
+| `Problem1` | `PaymentSystem` | Applies processing fees to card, wallet, and bank transfer transactions. |
+| `Problem2` | `LibraryDueDateCalculator` | Calculates due dates from the fixed date 2023-10-26. |
+| `Problem3` | `DeliveryFeeCalculator` | Calculates delivery fees from delivery type, weight, distance, and customs fee. |
+| `Problem4` | `ExaminationGrader` | Grades objective and essay questions. |
+| `Problem5` | `PublicTransportFareCalculator` | Calculates bus, train, and metro fares. |
 
 ## Compile and run
 
-Run commands from the repository root. Compile each program before running it:
+Run these commands from the corresponding problem folder:
 
-```sh
-javac Problem1/CanteenBillingCounter.java
-java -cp Problem1 CanteenBillingCounter
-
-javac Problem2/ParkingChargeCalculator.java
-java -cp Problem2 ParkingChargeCalculator
-
-javac Problem3/HostelElectricityBill.java
-java -cp Problem3 HostelElectricityBill
-
-javac Problem4/FestivalBonusCalculator.java
-java -cp Problem4 FestivalBonusCalculator
-
-javac Problem5/StreamingPlanRenewalReminder.java
-java -cp Problem5 StreamingPlanRenewalReminder
+```text
+javac PaymentSystem.java
+java PaymentSystem
 ```
 
-Provide each problem's input through standard input; the programs do not print
-prompts.
+Replace `PaymentSystem` with the Java filename's class name for the other
+problems. Each program reads the problem's specified input from standard input.
+The `.class` files are included alongside the Java sources.
+
+For Problem 3, the implementation follows the fee formulas in the assignment.
+The supplied international-delivery sample does not match those formulas: its
+input calculates to 145.00, not 155.00, and the corresponding total is 184.00.
