@@ -1,41 +1,46 @@
-# Week 7 Assignment
+# Week 8 Assignment
 
-Java solutions for the **SEM-3 CodInClub** exercises on encapsulation and access control.
+Five Java programs that demonstrate polymorphism by applying different business
+rules to bills, vehicles, rooms, employees, and subscription plans.
+
+## Requirements
+
+- Java 9 or later
 
 ## Problems
 
-- **Problem 1 - The Health Bar** (`Problem1/Character.java`)
-  - Keeps health private.
-  - Applies damage and healing with minimum and maximum bounds.
-- **Problem 2 - The Playlist** (`Problem2/Playlist.java`)
-  - Stores songs privately.
-  - Returns a copy of the songs rather than the internal array.
-- **Problem 3 - The Password Checker** (`Problem3/PasswordChecker.java`)
-  - Stores the password privately and exposes only its strength rating.
-- **Problem 4 - The Traffic Light** (`Problem4/TrafficLight.java`)
-  - Cycles through `RED`, `GREEN`, and `YELLOW` using `next()`.
-- **Problem 5 - The Shopping Cart** (`Problem5/Cart.java`)
-  - Stores prices privately and calculates the total and item count on request.
+| Folder | Program | Description |
+| --- | --- | --- |
+| `Problem1` | `CanteenBillingCounter` | Calculates customer bills and the total collected. |
+| `Problem2` | `ParkingChargeCalculator` | Calculates parking charges and the total collected. |
+| `Problem3` | `HostelElectricityBill` | Calculates room electricity bills and the total shown. |
+| `Problem4` | `FestivalBonusCalculator` | Calculates employee bonuses and the total paid. |
+| `Problem5` | `StreamingPlanRenewalReminder` | Calculates subscription renewal dates. |
+
+Each program reads input from standard input and prints the result in the
+specified format. The type-specific calculations are implemented by separate
+classes selected through a registry.
 
 ## Compile and run
 
-Each folder contains the Java source file and its compiled `.class` file. From the repository root:
+Run commands from the repository root. Compile each program before running it:
 
-```text
-javac Problem1\Character.java
-java -cp Problem1 Character
+```sh
+javac Problem1/CanteenBillingCounter.java
+java -cp Problem1 CanteenBillingCounter
 
-javac Problem2\Playlist.java
-java -cp Problem2 Playlist
+javac Problem2/ParkingChargeCalculator.java
+java -cp Problem2 ParkingChargeCalculator
 
-javac Problem3\PasswordChecker.java
-java -cp Problem3 PasswordChecker
+javac Problem3/HostelElectricityBill.java
+java -cp Problem3 HostelElectricityBill
 
-javac Problem4\TrafficLight.java
-java -cp Problem4 TrafficLight
+javac Problem4/FestivalBonusCalculator.java
+java -cp Problem4 FestivalBonusCalculator
 
-javac Problem5\Cart.java
-java -cp Problem5 Cart
+javac Problem5/StreamingPlanRenewalReminder.java
+java -cp Problem5 StreamingPlanRenewalReminder
 ```
 
-The `main` method in each class demonstrates the expected behavior from the problem statement.
+Provide each problem's input through standard input when prompted by the
+environment; the programs do not print prompts.
